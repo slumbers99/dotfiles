@@ -1,0 +1,17 @@
+set nocompatible               " Be iMproved
+filetype off
+
+if has('vim_starting')
+  set runtimepath+=~/dotfiles/vim/bundle/neobundle.vim
+endif
+call neobundle#rc(expand('~/dotfiles/vim/bundle/'))
+
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
+
+NeoBundle 'taichouchou2/alpaca_powertabline'
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+
+filetype plugin indent on
+syntax on
+
